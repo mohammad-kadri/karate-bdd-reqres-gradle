@@ -7,7 +7,7 @@ public class TestRunner {
     Karate runAllTests() {
         return Karate.run("classpath:features")
                      // .tags("~@ignore")
-                      .tags("@delete")
+                      .tags("@create")
                      .relativeTo(getClass());
     }
 }

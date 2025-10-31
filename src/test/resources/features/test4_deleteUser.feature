@@ -6,3 +6,4 @@ Feature: Delete object from restful-api
     Given url baseUrl + '/objects/' + jsonpayload.id
     When method DELETE
     Then status 200
+    And print 'response :', response

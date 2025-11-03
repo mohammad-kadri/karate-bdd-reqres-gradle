@@ -3,12 +3,12 @@ pipeline {
 
     tools {
         jdk 'jdk17'
-        gradle 'gradle9'
+        gradle 'gradle8'
     }
 
     environment {
         // Optional environment variables
-        PATH = "$PATH:${tool 'gradle9'}/bin"
+        PATH = "$PATH:${tool 'gradle8'}/bin"
     }
 
     stages {

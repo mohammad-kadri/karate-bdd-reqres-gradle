@@ -23,6 +23,7 @@ Feature: Create new object in restful-api
     And match response.data.price == 100000
     * def id = response.id
     * print 'id : ', id
+    # comment
     * karate.write(response,'data/create_object.json')
     * karate.log("response :",response)
 

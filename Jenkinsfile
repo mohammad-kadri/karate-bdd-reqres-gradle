@@ -22,14 +22,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project...'
-                sh './gradlew clean build'
+                bat './gradlew clean build'
             }
         }
 
         stage('Run Karate Tests') {
             steps {
                 echo 'Executing Karate API Tests...'
-                sh './gradlew test'
+                bat './gradlew test'
             }
         }
 
